@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Censimento</title>
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi' crossorigin='anonymous'>
+    <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js' integrity='sha384-OERcA2EqjJCMA+/3ygxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3' crossorigin='anonymous'>
+    </script>
+</head>
+
+<body>
+
+
+    <div class="container-fluid bg-primary text-center text-light p-3">
+        <h1>CENSIMENTO</h1>
+    </div>
+    <hr>
+    <div class="container">
+        <form>
+            <div class="row">
+                <div class="col-4">
+                    <label for="nome" class="form-label">NOME</label><br>
+                    <input type="text" class="form-control" id="nome">
+                </div>
+                <div class="col-4">
+                    <label for="cognome" class="form-label">COGNOME</label><br>
+                    <input type="text" class="form-control" id="cognome">
+                </div>
+                <div class="col-4">
+                    <label for="data" class="form-label">DATA DI NASCITA</label><br>
+                    <input type="date" class="form-control" id="data">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <button type="button" class="btn btn-info text-white mt-3" id="calcola">CALCOLA</button>
+                </div>
+                <div class="col-9">
+                    <h3 id="errore" class="text-danger">Compilare correttamente i campi obbligatori!</h3>
+                </div>
+            </div>
+        </form>
+        <hr>
+        <div class="container">
+            <table class="table table-striped">
+                <thead>
+                    <tr class="text-center">
+                        <th class="w-25"><b>NOME</b></th>
+                        <th class="w-25"><b>COGNOME</b></th>
+                        <th class="w-25"><b>ETÀ</b></th>
+                        <th class="w-25"><b>CANCELLA</b></th>
+                    </tr>
+                </thead>
+                <tbody id="lista">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="assets/js/scritp.js"></script>
+
+</body>
+
+</html>
